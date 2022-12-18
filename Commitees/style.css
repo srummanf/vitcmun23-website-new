@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.main::after {
+.main::before {
   content: "";
   background-color: black;
   background-image: url("/photo-1536181783029-1097aaf179de\ 1.png");
@@ -78,8 +78,8 @@ h1 {
   text-align: center;
   justify-content: center;
   color: black;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   font-size: 1.2rem;
   border: solid black;
   border-top-left-radius: 25px;
