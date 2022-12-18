@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-.main::before {
+.main{
   content: "";
   background-color: black;
   background-image: url("/photo-1536181783029-1097aaf179de\ 1.png");
