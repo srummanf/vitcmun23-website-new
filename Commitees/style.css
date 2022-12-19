@@ -86,7 +86,7 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 1050px) {
-  .main {
+  .committees {
     width: 100%;
     height: 100%;
     position: relative;
@@ -158,12 +158,8 @@ nav ul li a:hover {
     border-radius: 20px;
   }
 
-  .main::before {
+  .committees::before {
     content: "";
-    background-color: black;
-    background-image: url("./campus-banner.jpg");
-    background-size: cover;
-    position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -175,13 +171,21 @@ nav ul li a:hover {
   }
 
   @keyframes overlay {
-    0% {transform: scaleX(0);}
-    100% {transform: scaleX(1);}
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
   }
 
   @keyframes overlayClose {
-    0% {transform: scaleX(1);}
-    100% {transform: scaleX(0);}
+    0% {
+      transform: scaleX(1);
+    }
+    100% {
+      transform: scaleX(0);
+    }
   }
 
   .overlay {
@@ -232,24 +236,8 @@ nav ul li a:hover {
     color: black;
   }
 
-  .pic {
-    text-align: center;
-  }
-
-  .pic img {
-    border-radius: 20px;
-  }
-
-  .letter-wrappper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   .munintro h2 {
     font-size: 1.2rem;
-
   }
 
   .munintro p {
@@ -282,7 +270,7 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
   }
-  
+
   .footer-wrapper {
     display: flex;
     justify-content: center;
@@ -293,7 +281,7 @@ nav ul li a:hover {
     margin-right: 5%;
     /* gap: 120px; */
   }
-  
+
   .left {
     width: 100%;
     height: 100%;
@@ -303,7 +291,7 @@ nav ul li a:hover {
     margin: 0;
     /* margin-left: 12%; */
   }
-  
+
   .right {
     width: 100%;
     height: 100%;
@@ -311,7 +299,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
   }
-  
+
   .text {
     display: flex;
     text-align: center;
@@ -319,7 +307,6 @@ nav ul li a:hover {
     /* margin: 30px 0px 0px 15px; */
     margin-bottom: 10%;
   }
-
 }
 
 @media only screen and (max-width: 520px) {
@@ -327,7 +314,13 @@ nav ul li a:hover {
     z-index: -10;
   }
 
-
+  .mobile-logo img {
+    margin: 0;
+    width: 4.5rem;
+    height: 4.5rem;
+    /* background: rgba(255, 255, 255, 0.837); */
+    border-radius: 20px;
+  }
   .overlay {
     display: none;
     background: white;
@@ -384,14 +377,14 @@ nav ul li a:hover {
     width: 100vw;
     margin-top: 5%;
   }
-  
+
   .names p {
     /* border: 4px solid white; */
     text-shadow: none;
     background: white;
     width: 180px;
   }
-  
+
   .names .dates {
     border-radius: 0px 40px 40px 0px;
     border-left: none;
@@ -400,7 +393,7 @@ nav ul li a:hover {
     color: #8f0d8f;
     box-shadow: 1px 7px 15px #8f0d8f;
   }
-  
+
   .names .detail {
     border-radius: 40px 0px 0px 40px;
     border-right: none;
@@ -430,8 +423,11 @@ nav ul li a:hover {
     /* background: red; */
     font-family: "Cormorant Garamond", serif;
   }
-  
-  .munintro h2, .vitmunintro h2 , .letter-wrappper .pic, .text-letter {
+
+  .munintro h2,
+  .vitmunintro h2,
+  .letter-wrappper .pic,
+  .text-letter {
     margin-top: 2.5rem;
   }
 }
