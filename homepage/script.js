@@ -24,4 +24,3 @@ more.addEventListener("click", function () {
     })
 
 })
-
