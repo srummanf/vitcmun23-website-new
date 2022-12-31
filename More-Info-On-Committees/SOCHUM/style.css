@@ -691,9 +691,14 @@ footer p {
   height: 15%;
 }
 .head1 img,
-.head2 img,
-.head3 img {
-  width: 50%;
+.head2 img {
+  width: 60%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.head3 img{
+  width: 55%;
   height: auto;
   margin-top: 5%;
 }
