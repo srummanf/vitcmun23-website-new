@@ -47,7 +47,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #B7A3E6;
+  color: #b7a3e6;
   padding: 30px;
   transition: all 0.4s;
 }
@@ -432,6 +432,7 @@ nav ul li a:hover {
   }
 }
 
+/*Footer*/
 .footer {
   background-color: rgba(128, 60, 120, 0.8);
   padding-top: 100px;
@@ -581,139 +582,155 @@ footer p {
 }
 
 /*Main Content*/
-.unsc{
-    background-color: #e6d7ed;
-    margin-top: 5%;
-    font-family: "Poppins", sans-serif;
-    padding: 0 10%;
+.unsc {
+  background-color: #e6d7ed;
+  margin-top: 5%;
+  font-family: "Poppins", sans-serif;
+  padding: 0 10%;
 }
 
-.unsc .title{
-    display: flex;
-    justify-content: center;
+.unsc .title {
+  display: flex;
+  justify-content: center;
 }
 
-.title h2{
-    color: #703496;
-    margin-top: 2%;
-    font-size: 2rem;
-    text-align: center;
-}
-
-@media (max-width: 650px) {
-    .title h2{
-        padding-top: 5%;
-        font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 490px){
-    .title h2{
-        font-size: 1.3rem;
-    }
-}
-
-.aboutunsc h3{
-    margin-top: 2%;
+.title h2 {
+  color: #703496;
+  margin-top: 2%;
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media (max-width: 650px) {
-    .aboutunsc h3{
-        font-size: 1.4rem;
-    }
+  .title h2 {
+    padding-top: 5%;
+    font-size: 1.5rem;
+  }
 }
 
-@media (max-width: 490px){
-    .aboutunsc h3{
-        font-size: 1.1rem;
-    }
+@media (max-width: 490px) {
+  .title h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.aboutunsc h3 {
+  margin-top: 2%;
+}
+
+@media (max-width: 650px) {
+  .aboutunsc h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .aboutunsc h3 {
+    font-size: 1.1rem;
+  }
 }
 
 .unsc .aboutunsc {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #703496;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #703496;
 }
 
-.unsc .aboutunsc h3{
-    color: #AE50A4;
+.unsc .aboutunsc h3 {
+  color: #ae50a4;
 }
 
-.unsc .agenda{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #703496;   
+.unsc .agenda {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #703496;
 }
 
-.unsc .agenda h3{
-    color: #AE50A4;
+.unsc .agenda h3 {
+  color: #ae50a4;
 }
 @media (max-width: 650px) {
-    .unsc .agenda h3{
-        font-size: 1.4rem;
-    }
+  .unsc .agenda h3 {
+    font-size: 1.4rem;
+  }
 }
 
-@media (max-width: 490px){
-    .unsc .agenda h3{
-        font-size: 1.1rem;
-    }
+@media (max-width: 490px) {
+  .unsc .agenda h3 {
+    font-size: 1.1rem;
+  }
 }
 
-.unsc .agenda p{
-    margin-bottom: 2%;
+.unsc .agenda p {
+  margin-bottom: 2%;
 }
 
-.subhead{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    gap: 5%;
-    margin: 3% 0;
+.subhead {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 5%;
+  margin: 3% 0;
 }
 
-.head1 , .head3{
-    background-color: white;
-    border-top: 8px solid #B7A3E6;
-    border-bottom: 8px solid #B7A3E6;
-    width: 100vh;
-    height: 15%;
+.head1,
+.head3 {
+  background-color: white;
+  border-top: 8px solid #b7a3e6;
+  border-bottom: 8px solid #b7a3e6;
+  width: 100vh;
+  height: 15%;
 }
 
-.head2{
-    background-color: white;
-    border-top: 8px solid #AE50A4;
-    border-bottom: 8px solid #AE50A4;
-    width: 100vh;
-    height: 15%;
+.head2 {
+  background-color: white;
+  border-top: 8px solid #ae50a4;
+  border-bottom: 8px solid #ae50a4;
+  width: 100vh;
+  height: 15%;
 }
-.head1 img,.head2 img,.head3 img{
+
+.head1 img,
+.head2 img {
+  width: 50%;
+  height: auto;
+  margin-top: 5%;
+}
+
+.head3 img {
+  width: 45%;
+  height: auto;
+  margin-top: 5%;
+}
+.head1 h4,
+.head2 h4,
+.head3 h4 {
+  margin: -1% 0;
+}
+
+.head1 p,
+.head2 p,
+.head3 p {
+  margin-bottom: 5%;
+}
+
+@media (max-width: 620px) {
+  .subhead {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .head1 img,
+  .head2 img,
+  .head3 img {
     width: 50%;
-    height: auto;
-    margin-top: 5%;
-}
-
-.head1 h4,.head2 h4,.head3 h4{
-    margin: -1% 0;
-}
-
-.head1 p,.head2 p,.head3 p{
-    margin-bottom: 5%;
-}
-
-@media (max-width: 620px){
-    .subhead{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .head1 img,.head2 img,.head3 img{
-        width: 50%; 
-    }
-    .head1, .head2, .head3{
-        width: 30vh;
-    }
+  }
+  .head1,
+  .head2,
+  .head3 {
+    width: 30vh;
+  }
 }
